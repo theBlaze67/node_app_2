@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&family=Poppins&family=Satisfy&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +10,9 @@ header{
     color: white;
     position: sticky;
     top: 0;
+}
+main{
+    background-color: #f1f1f1;
 }
 nav{
     display: flex;
@@ -165,6 +168,83 @@ signup{
     border-radius: 10px;
     margin: 10px 0;
 }
+.about-column img{
+    margin: 10px 0;
+}
+.our-services{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    background-color: #f1f1f1;
+}
+.service-row{
+    display: flex;
+    justify-content: space-around;
+}
+.service-container{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    width: 45%;
+    box-shadow: 10px 10px 5px #cdcdcd;
+}
+.service-container h3{
+    margin: 10px 0;
+}
+.service-container P{
+    padding: 0 10px;
+    margin: 10px 0;
+}
+.service-container div{
+    display: flex;
+    background-color: rgb(84, 35, 144);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    border-radius: 10px;
+}
+.service-container div i{
+    font-size: 100px;
+}
+.service-container a{
+    display: block;
+    width: 95%;
+    background-color: rgb(84, 35, 144);
+    padding: 10px 0;
+    color: white;
+    margin: 10px auto;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: .6s;
+}
+.service-container a:hover{
+    background-color: rgb(115, 0, 255);
+}
+footer,footer ul{
+    background-color: rgb(84, 35, 144);
+    color: white;
+    padding: 10px 0;
+    list-style: none;
+}
+.footer-upper{
+    display: flex;
+    width: 100%;
+}
+.footer-upper-left{
+    width: 40%;
+}
+.logo-text{
+    font-family: 'Satisfy', cursive;
+}
+.footer-pages{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
 @media (max-width:500px){
     nav{
         flex-direction: column;
@@ -210,5 +290,13 @@ signup{
     }
     .about-column{
         width: 90%;
+    }
+    .service-row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-container{
+        width: 95%;
+        margin: 10px 0;
     }
 }
