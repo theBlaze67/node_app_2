@@ -98,19 +98,72 @@ nav{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 10px 0;
 }
 .login-form div input{
     border: .5px solid black;
     padding: 10px 15px;
     border-radius: 10px;
+    width: 90%;
 }
-.login-form a{
+.login{
     display: block;
     text-decoration: none;
     color: white;
     background-color: rgb(115, 0, 255);
     padding: 5px 10px;
     border-radius: 10px;
+}
+signup{
+    display: inline;
+}
+.about-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(115, 0, 255);
+    width: 100vw;
+    height: 93vh;
+}
+.about-column{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+}
+.about-column h3{
+    background-color: rgb(84, 35, 144);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    width: 100%;
+}
+.about-column img{
+    width: 40%;
+    border-radius: 50%;
+}
+.about-list,.skills-list{
+    list-style: none;
+}
+.about-list li{
+    margin: 10px 0;
+}
+.about-column details{
+    margin: 0 0 10px 0;
+}
+.skills-list li{
+    margin: 10px 0;
+}
+.about-column a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(115, 0, 255);
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 10px 0;
 }
 @media (max-width:500px){
     nav{
@@ -140,6 +193,22 @@ nav{
         display: flex;
     }
     .page-welcome div a{
+        width: 90%;
+    }
+    .login-container{
+        flex-direction: column;
+        width: 80%;
+    }
+    .login-container img{
+        width: 100%;
+    }
+    .login-form{
+        width: 100%;
+    }
+    .login-form div{
+        width: 100%;
+    }
+    .about-column{
         width: 90%;
     }
 }
